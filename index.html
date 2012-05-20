@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NiceRide - how far to fun?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Gorditas' rel='stylesheet' type='text/css'>
+    
+    <style type="text/css">
+
+    h1#niceride-big {
+	font-family: 'Gorditas', cursive;
+    color: #41A317;
+    font-size: 130px;
+    line-height: 130px;
+    text-align: center;
+}
+
+h2#niceride-medium {
+	font-family: sans-serif;
+	font-size: 20px;
+	color: #444;
+	margin-left: 470px;
+	margin-bottom: 50px;
+}
+
+label.niceride-label {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+#options {
+	text-align: center;
+}
+</style>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Table of Contents</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+        <div class="span12">
+            <div class="row" id="options">
+            	<h1 id="niceride-big">Nice Ride</h1>
+            	<h2 id="niceride-medium">How far to fun?</h2>
+                <div class="span6">
+                    <form>
+                        <label class="niceride-label">What is your location?</label>
+                        <select type="select" class="input" id="niceride-location">
+                            <option value="100 Main Street SE">100 Main Street SE</option>
+                            <option value="25th Street & 33rd Ave. S">25th Street & 33rd Ave. S</option>
+                            <option value="Augsburg College">Augsburg College</option>
+                            <option value="Plymouth Ave. N & Oliver Ave. N">Plymouth Ave. N & Oliver Ave. N</option>
+                            <option value="11th Street & Hennepin">11th Street & Hennepin</option>
+                            <option value="Hennepin & Central Ave. NE">Hennepin & Central Ave. NE</option>
+                            <option value="YWCA Downtown">YWCA Downtown</option>
+                            <option value="9th Street & 4th Ave. S">9th Street & 4th Ave. S</option>
+                            <option value="Midtown Exchange">Midtown Exchange</option>
+                            <option value="4th Street & 13th Ave. SE">4th Street & 13th Ave. SE</option>
+                            <option value="Hennepin & Laurel Ave.">Hennepin & Laurel Ave.</option>
+                            <option value="North 2nd Street & 4th Ave. N">North 2nd Street & 4th Ave. N</option>
+                            <option value="Mpls. Convention Center">Mpls. Convention Center</option>
+                            <option value="Lake Street & Lyndale">Lake Street & Lyndale</option>
+                            <option value="25th Ave. S & Franklin">25th Ave. S & Franklin</option>
+                            <option value="Washington & Cedar">Washington & Cedar</option>
+                            <option value="Walker Art Center">Walker Art Center</option>
+                            <option value="22nd Street & Lyndale">22nd Street & Lyndale</option>
+                            <option value="MCAD">MCAD</option>
+                            <option value="Social Sciences">Social Sciences</option>
+                            <option value="YWCA Uptown">YWCA Uptown</option>
+                            <option value="Washington & 2nd Ave. N">Washington & 2nd Ave. N</option>
+                            <option value="26th Street & Lyndale">26th Street & Lyndale</option>
+                            <option value="Chicago & 27th Street">Chicago & 27th Street</option>
+                            <option value="Kolthoff Hall">Kolthoff Hall</option>
+                            <option value="Williamson Hall">Williamson Hall</option>
+                            <option value="4th Street S & 19th Ave.">4th Street S & 19th Ave.</option>
+                            <option value="Washington & Marquette">Washington & Marquette</option>
+                            <option value="5th Street & 3rd. Ave. S">5th Street & 3rd. Ave. S</option>
+                            <option value="South 2nd Street & 3rd. Ave. S">South 2nd Street & 3rd. Ave. S</option>
+                            <option value="University Ave. & 23rd Ave. SE">University Ave. & 23rd Ave. SE</option>
+                            <option value="4th Street & 17th Ave. SE">4th Street & 17th Ave. SE</option>
+                            <option value="Franklin & 11th Ave.">Franklin & 11th Ave.</option>
+                            <option value="Oak Street Ramp">Oak Street Ramp</option>
+                            <option value="Loring Park">Loring Park</option>
+                            <option value="Downtown Library">Downtown Library</option>
+                            <option value="Currie Park">Currie Park</option>
+                            <option value="19th Ave. S & Franklin">19th Ave. S & Franklin</option>
+                            <option value="Park Ave. & 5th Street">Park Ave. & 5th Street</option>
+                            <option value="11th Street & Marquette">11th Street & Marquette</option>
+                            <option value="Franklin & Portland">Franklin & Portland</option>
+                            <option value="IDS Center">IDS Center</option>
+                            <option value="Lake Street & Humboldt">Lake Street & Humboldt</option>
+                            <option value="26th Street & Hennepin">26th Street & Hennepin</option>
+                            <option value="Franklin & 28th Ave.">Franklin & 28th Ave.</option>
+                            <option value="Washington Ave. S & 9th Ave.">Washington Ave. S & 9th Ave.</option>
+                            <option value="University & Bank Street SE">University & Bank Street SE</option>
+                            <option value="Franklin Ave. & Colfax">Franklin Ave. & Colfax</option>
+                            <option value="Blaisdell Ave. S & W 26th St">Blaisdell Ave. S & W 26th St</option>
+                            <option value="3rd Street S. & 2nd Ave. S">3rd Street S. & 2nd Ave. S</option>
+                            <option value="7th Street & 4th Ave. S">7th Street & 4th Ave. S</option>
+                            <option value="Nicollet Mall & Grant Street">Nicollet Mall & Grant Street</option>
+                            <option value="5th Ave. S & East 27th Street">5th Ave. S & East 27th Street</option>
+                            <option value="Hennepin Ave. & 4th Street">Hennepin Ave. & 4th Street</option>
+                            <option value="5th Ave. N & N 4th Street">5th Ave. N & N 4th Street</option>
+                            <option value="McNamara Center">McNamara Center</option>
+                            <option value="Elliot Hall">Elliot Hall</option>
+                            <option value="Glenwood Ave & N Morgan Ave">Glenwood Ave & N Morgan Ave</option>
+                            <option value="Nicollet & Franklin">Nicollet & Franklin</option>
+                            <option value="Emerson Ave. S & 24th Street">Emerson Ave. S & 24th Street</option>
+                            <option value="International Market Square">International Market Square</option>
+                            <option value="Elliot Park">Elliot Park</option>
+                            <option value="28th Street & Nicollet Ave. S">28th Street & Nicollet Ave. S</option>
+                            <option value="Washington Ave. N & 12th Ave. N">Washington Ave. N & 12th Ave. N</option>
+                            <option value="Plymouth Ave. N & Fremont">Plymouth Ave. N & Fremont</option>
+                            <option value="Bryant Ave. N & West Broadway">Bryant Ave. N & West Broadway</option>
+                            <option value="North Commons Park">North Commons Park</option>
+                            <option value="Farview Park">Farview Park</option>
+                            <option value="West Broadway & Logan Ave. N">West Broadway & Logan Ave. N</option>
+                            <option value="North Regional Library">North Regional Library</option>
+                            <option value="Lowry Ave. N & Penn Ave.">Lowry Ave. N & Penn Ave.</option>
+                            <option value="27th Ave. SE & University Ave.">27th Ave. SE & University Ave.</option>
+                            <option value="Fairview Ave. & University Ave.">Fairview Ave. & University Ave.</option>
+                            <option value="Hamline University">Hamline University</option>
+                            <option value="Sherburne Ave. & Snelling Ave N">Sherburne Ave. & Snelling Ave N</option>
+                            <option value="Midtown YWCA">Midtown YWCA</option>
+                            <option value="East Lake Street & 39th Ave. S">East Lake Street & 39th Ave. S</option>
+                            <option value="Wilder Street & Marshall Ave.">Wilder Street & Marshall Ave.</option>
+                            <option value="Merriam Park Library">Merriam Park Library</option>
+                            <option value="St. Thomas University">St. Thomas University</option>
+                            <option value="Grand Ave. & Fairview Ave.">Grand Ave. & Fairview Ave.</option>
+                            <option value="Macalester College">Macalester College</option>
+                            <option value="6th Ave. SE & University Ave.">6th Ave. SE & University Ave.</option>
+                            <option value="Calhoun Executive Center">Calhoun Executive Center</option>
+                            <option value="Portland Ave. & Washington Ave.">Portland Ave. & Washington Ave.</option>
+                            <option value="2nd Street N & Hennepin Ave.">2nd Street N & Hennepin Ave.</option>
+                            <option value="2nd Street N & 8th Ave. N">2nd Street N & 8th Ave. N</option>
+                            <option value="West 15th Street & Willow">West 15th Street & Willow</option>
+                            <option value="West 32nd Street & Bryant Ave. S">West 32nd Street & Bryant Ave. S</option>
+                            <option value="West 36th Street & Bryant Ave. S">West 36th Street & Bryant Ave. S</option>
+                            <option value="University Ave. NE & 12th Ave. NE">University Ave. NE & 12th Ave. NE</option>
+                            <option value="Nicollet Ave. & Lake Street">Nicollet Ave. & Lake Street</option>
+                            <option value="Marshall Street NE & 8th Ave. NE">Marshall Street NE & 8th Ave. NE</option>
+                            <option value="Kowalski's Market">Kowalski's Market</option>
+                            <option value="Grand Ave. & Lexington Ave.">Grand Ave. & Lexington Ave.</option>
+                            <option value="N Milton Street & Summit Ave">N Milton Street & Summit Ave</option>
+                            <option value="Marshall Avenue & Syndicate Street">Marshall Avenue & Syndicate Street</option>
+                            <option value="Hague Ave. & Dale Street">Hague Ave. & Dale Street</option>
+                            <option value="Logan Park">Logan Park</option>
+                            <option value="Lexington Ave. N & University Ave.">Lexington Ave. N & University Ave.</option>
+                            <option value="Dale Street & Grand Ave.">Dale Street & Grand Ave.</option>
+                            <option value="Dale Street N & University Ave.">Dale Street N & University Ave.</option>
+                            <option value="Carter Ave. & Como Ave.">Carter Ave. & Como Ave.</option>
+                            <option value="Como Ave. SE & 29th Ave. SE">Como Ave. SE & 29th Ave. SE</option>
+                            <option value="15th Ave. SE & Como Ave. SE">15th Ave. SE & Como Ave. SE</option>
+                            <option value="St. Paul Police Western District">St. Paul Police Western District</option>
+                            <option value="Central Ave. NE & 22nd Ave NE">Central Ave. NE & 22nd Ave NE</option>
+                            <option value="Snelling Ave. N & Laurel Ave.">Snelling Ave. N & Laurel Ave.</option>
+                            <option value="Minnesota History Center">Minnesota History Center</option>
+                            <option value="Kellogg Blvd E & Jackson Street">Kellogg Blvd E & Jackson Street</option>
+                            <option value="Livingston Avenue Riverfront">Livingston Avenue Riverfront</option>
+                            <option value="Kellogg Blvd & Wabasha Street">Kellogg Blvd & Wabasha Street</option>
+                            <option value="Wabasha Street S & Cesar Chavez Street">Wabasha Street S & Cesar Chavez Street</option>
+                            <option value="Science Museum of Minnesota">Science Museum of Minnesota</option>
+                            <option value="Minneapolis Park & Recreation Board">Minneapolis Park & Recreation Board</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="span6">
+                    <form>
+                        <label class="niceride-label">How much time do you have?</label>
+                        <select type="select" class="input" id="time">
+                            <option value="30">30 minutes</option>
+                            <option value="60">60 minutes</option>
+                        </select>
+                    </form>
+                  </div>
+                <div class="row">
+                    <div class="span12">
+                        <div class="center">
+                            <a class="btn btn-primary btn-large" id="show-map">Go!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12" id="map-wrapper" style="display:none;">
+                    <div id="map" style="border: 1px black solid; width: 600px; height: 400px">
+                    </div>
+                    <a class="btn btn-primary" id="show-options">Back</a>
+                </div>
+            </div>
+            <div class="row" id="credits">
+            	<small>Created for the first occasional spatial hotdish event.</small>
+            </div>
+        </div>
+      
+    </div> <!-- /container -->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+   
+    var bufferDist;
+var stationName;
+
+$(document).ready(function() {
+    
+    $("#show-map").click(function() {
+        $("#options").slideToggle("fast", function() {
+            //
+        });
+        $("#map-wrapper").slideToggle("fast", function() {
+            //
+        });
+        
+        window.bufferDist = $("#niceride-location").val();
+        window.stationName = $("#time").val();
+        for (i=0;i< niceride.features.length;i++){if (niceride.features[i].properties.StationNam == stationName){var markerLocation = new L.LatLng(niceride.features[i].properties.Lattitude, niceride.features[i].properties.Longitude),marker = new L.Marker(markerLocation);map.addLayer(marker);marker.bindPopup(niceride.features[i].properties.StationNam);};}
+        var circleLocation = new L.LatLng(44.984892, -93.256551), circleOptions = {color: '#f03', opacity: 0.7},circle = new L.Circle(circleLocation, bufferDist, circleOptions);map.addLayer(circle);
+    });
+
+    $("#show-options").click(function() {
+        $("#options").slideToggle("fast", function() {
+            //
+        });
+        $("#map-wrapper").slideToggle("fast", function() {
+            //
+        });
+        
+    });
+
+});
+</script>
+
+<script>
+
+<!--var lightcabs = <?php print fopen("lightcabs.js", "r");?>;-->
+
+var map = new L.Map('map');
+
+		var streetMapUrl = 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}';
+		var streetMapLayer = new L.TileLayer(streetMapUrl, { maxZoom: 19, attribution: 'Tiles: &copy; Esri' });
+
+		map.setView(new L.LatLng(45.0, -93.2), 12)
+		    .addLayer(streetMapLayer);
+
+
+
+
+
+		var geojson_layer = new L.GeoJSON( null, {
+		pointToLayer: function ( latlng ) {
+						        return new L.CircleMarker( latlng, {
+						            radius: 2,
+						            fillColor: "#ff7800",
+						            opacity: 1
+		} );
+
+		}
+		} );
+
+
+		geojson_layer.on( "featureparse", function( e ) {
+
+		var cabid = ""+ e.properties.cabinet_id +"";
+		var popup_content = "";
+		var myurl = ""+ e.properties.layout +"";
+
+					if ( e.geometryType == "Point" ) {
+						popup_content += "<b>ADDRESS: </b> "+ e.properties.Match_addr;
+
+						popup_content += "</br>";
+						popup_content += "<b>TERMINAL: </b> "+ e.properties.TERMINAL;
+						<!--popup_content += "<a href="+" "+ e.properties.layout +"  target='_blank' "+">Document Link</a>";-->
+
+					}
+					if ( e.properties && e.properties.popup_content ) {
+
+					}
+					e.layer.bindPopup( popup_content );
+					if ( e.properties && e.properties.style && e.layer.setStyle ) {
+						e.layer.setStyle( e.properties.style );
+					}
+
+
+
+					} );
+
+		map.addLayer( geojson_layer )
+		geojson_layer.addGeoJSON( niceride );
+
+		var geojson_layer2 = new L.GeoJSON( null, {
+				pointToLayer: function ( latlng ) {
+								        return new L.CircleMarker( latlng, {
+								            radius: 12,
+								            fillColor: "#cc0000",
+								            opacity: 1
+				} );
+
+				}
+				} );
+
+
+				geojson_layer2.on( "featureparse", function( e ) {
+
+				var cabid = ""+ e.properties.cabinet_id +"";
+				var popup_content = "";
+				var myurl = ""+ e.properties.layout +"";
+
+							if ( e.geometryType == "Point" ) {
+								popup_content += "<b>NAME: </b> "+ e.properties.name;
+
+								popup_content += "</br>";
+
+								<!--popup_content += "<a href="+" "+ e.properties.layout +"  target='_blank' "+">Document Link</a>";-->
+
+							}
+							if ( e.properties && e.properties.popup_content ) {
+
+							}
+							e.layer.bindPopup( popup_content );
+							if ( e.properties && e.properties.style && e.layer.setStyle ) {
+								e.layer.setStyle( e.properties.style );
+							}
+
+
+
+							} );
+
+				map.addLayer( geojson_layer2 )
+		geojson_layer2.addGeoJSON( pubs );
+
+
+
+</script>
+
+
+  </body>
+</html>
